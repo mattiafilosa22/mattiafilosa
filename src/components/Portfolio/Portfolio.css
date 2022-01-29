@@ -1,0 +1,147 @@
+#port_container{
+    display: flex;
+    align-items: center; 
+    place-content: center;
+}
+#portfolio{
+    margin-top: 3%;
+}
+
+#title_center{
+    font-size: 10rem;
+}
+
+#flex_cont{
+    display: flex;
+    justify-content: center;
+}
+#proj_container{
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+.proj_element{
+    box-shadow: 0 0.25em 0.5em 0 rgb(0 0 0 / 25%), 0 0.4em 1.25em 0 rgb(0 0 0 / 15%) !important;
+    padding: 2em 3em !important;
+    width: 40%;
+    margin: 1%;
+}
+
+.proj_element div{
+    display: flex;
+}
+
+.proj_element h1{
+    margin-bottom: 0;
+}
+
+.proj_element h5{
+    margin-top: 0;
+    
+}
+
+.button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+    background-color: #3da3d5;
+}
+
+.button:hover{
+    background-color: #58afda;
+}
+
+/*Footer*/
+.custom-shape-divider-bottom-1643030209 {
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643030209 svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 10rem;
+}
+
+.custom-shape-divider-bottom-1643030209 .shape-fill {
+    fill: #3da3d5;
+}
+
+#linkedin{
+    height: 50px;
+}
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.icon_buffer{
+    width: 1rem;
+}
+.btn-contact{
+    padding: 2%!important;
+    margin:1%;
+}
+
+FaLinkedin{
+    width: 100px;
+}
+
+@media only screen and (max-width:1199px){
+    #portfolio_cont img{
+        max-width: 30%;
+    }
+    .proj_element div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .proj_element div p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1199px){
+    #proj_container{
+        flex-direction: column;
+    }
+    .proj_element{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:3000px){
+    #portfolio_cont{
+        margin-top: 16%;
+        
+    }
+    #portfolio_cont h1.title{
+        font-size: 18rem;
+    }
+    #proj_container{
+        margin-bottom: 10%;
+    }
+    
+    .proj_element{
+        font-size: 1.9rem;
+    }
+    .proj_element h1{
+        font-size: 4.2rem!important;
+    }
+    .proj_element img{
+        width: 40%;
+    }
+    .proj_element:first-child img{
+        width: 24%!important;
+    }
+}

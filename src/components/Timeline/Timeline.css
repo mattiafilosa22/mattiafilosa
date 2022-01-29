@@ -1,0 +1,133 @@
+.title {
+  font-size: 10rem;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #3da3d5;
+}
+
+button:hover{}
+
+.workButton:hover {
+  background-color: #58afda;
+}
+
+.schoolButton {
+  background-color: #3da3d5;
+}
+
+.schoolButton:hover {
+  background-color: #58afda;
+}
+
+div.vertical-timeline::before {
+  background: white;
+}
+
+#time_div {
+  background: #fff;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  box-shadow: 0 0.25em 0.5em 0 rgb(0 0 0 / 25%), 0 0.4em 1.25em 0 rgb(0 0 0 / 15%) !important;
+}
+
+.vertical-timeline.vertical-timeline--two-columns:before {
+  left: 50%;
+  margin-left: -2px;
+  box-shadow: 0 0.55em 0.9em 0 rgb(0 0 0 / 25%), 0 0.4em 1.25em 0 rgb(0 0 0 / 15%) !important;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  color: #3da3d5;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  background: #3da3d5 !important;
+}
+
+@media only screen and (max-width:999px) {
+  #time_div .button {
+    float: right;
+    margin-top: 2%;
+  }
+}
+
+@media only screen and (max-width:499px) {
+
+  .vertical-timeline {
+    padding-left: 3rem;
+  }
+
+  .vertical-timeline-element-content {
+    width: 75%;
+  }
+
+  span.date {
+    width: 30%;
+  }
+
+  .vertical-timeline-element-title, .vertical-timeline-element-subtitle, #description {
+    text-align: center;
+  }
+
+  .vertical-timeline-element {
+    margin-left: 2rem !important;
+  }
+}
+
+@media only screen and (min-width:3000px){
+  #time_div{
+    margin-top: 26%;
+    margin-bottom: 7%;
+  }
+  #time_div h1.title{
+    font-size: 16.2rem !important;
+  }
+  #time_div h3{
+    font-size: 2.4rem;
+  }
+  #time_div h5{
+    font-size: 1.5rem;
+  }
+  #time_div p{
+    font-size: 1.5rem;
+  }
+  .vertical-timeline{
+    max-width: 100%!important;
+  }
+  .vertical-timeline-element-date{
+    font-size: 1.9rem!important;
+  }
+  .vertical-timeline-element .button{
+    font-size: 1.4rem!important;
+  }
+}

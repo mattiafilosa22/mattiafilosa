@@ -1,0 +1,197 @@
+/*Progress bar*/
+.progress {
+    margin: 50px auto;
+    padding: 2px;
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid #3da3d5;
+    ;
+    height: 30px;
+}
+
+.progress .progress__bar {
+    height: 100%;
+    width: 0%;
+    background-color: #3da3d5;
+    animation: fill-bar 3s infinite;
+}
+
+@keyframes fill-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.container_small {
+    background-color: rgb(192, 192, 192);
+    width: 30%;
+    border-radius: 15px;
+}
+
+/*Skills*/
+#skills {
+    /* background: url('../../media/skills.jpg') no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 950px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 950px;
+}
+
+.container h1 {
+    margin-top: 3%;
+}
+
+.skill {
+    background-color: #3da3d5;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 2.2rem;
+    border-radius: 15px;
+}
+
+.html {
+    width: 90%;
+}
+
+.python {
+    width: 80%;
+}
+
+.react {
+    width: 60%;
+}
+
+.xslt {
+    width: 50%;
+}
+
+.asp {
+    width: 40%;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .f2-m {
+        font-size: 2.25rem;
+    }
+
+    .f4-m {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .f1-l {
+        font-size: 3rem;
+    }
+
+    .f3-l {
+        font-size: 1.5rem;
+    }
+}
+
+.dark-green {
+    color: #3da3d5 !important;
+}
+
+#buffer {
+    height: 10%;
+}
+
+
+.button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+}
+
+
+#skills h1 {
+    font-size: 8rem;
+}
+
+#skills_cont {
+    display: flex;
+}
+
+#down_button {
+    margin-top: 5%;
+}
+
+#c1 {
+    position: absolute;
+    top: 78rem;
+    left: 15rem;
+}
+
+#t1 {
+    position: absolute;
+    right: 10rem;
+    top: 96rem;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #3da3d5;
+    opacity: 0.4;
+}
+
+/*Responsive*/
+@media only screen and (max-width:999px) {
+    .circle, .triangle {
+        display: none;
+    }
+
+    .container_small {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:3000px) {
+    #skills h1 {
+        font-size: 13.2rem !important;
+    }
+
+    #skills p {
+        font-size: 3rem;
+    }
+
+    #skills .skill {
+        padding: 2%;
+    }
+
+    #c1 {
+        position: absolute;
+        left: 15rem;
+        top: 145rem;
+    }
+
+    .triangle {
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 400px solid #3da3d5;
+        
+    }
+    #t1{
+        position: absolute;
+        right: 10rem;
+        top: 206rem;
+    }
+}
