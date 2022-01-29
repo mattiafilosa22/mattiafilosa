@@ -98,6 +98,12 @@ FaLinkedin{
     width: 100px;
 }
 
+@media only screen and (max-width:699px){
+    #portfolio_cont h1.title{
+        font-size: 5rem;
+    }
+}
+
 @media only screen and (max-width:1199px){
     #portfolio_cont img{
         max-width: 30%;
@@ -116,7 +122,7 @@ FaLinkedin{
         flex-direction: column;
     }
     .proj_element{
-        width: 80%;
+        width: 70%;
     }
 }
 

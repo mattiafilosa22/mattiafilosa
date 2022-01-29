@@ -82,7 +82,9 @@ div.vertical-timeline::before {
 }
 
 @media only screen and (max-width:499px) {
-
+  #time_div h1{
+    font-size: 6rem;
+  }
   .vertical-timeline {
     padding-left: 3rem;
   }
@@ -91,16 +93,21 @@ div.vertical-timeline::before {
     width: 75%;
   }
 
-  span.date {
+  /* span.date {
     width: 30%;
-  }
+  } */
 
   .vertical-timeline-element-title, .vertical-timeline-element-subtitle, #description {
     text-align: center;
   }
 
   .vertical-timeline-element {
-    margin-left: 2rem !important;
+    margin-left: 10px!important;
+  }
+  .vertical-timeline-element-date{
+    width: 100%;
+    text-align: center;
+    margin-left: 7px;
   }
 }
 

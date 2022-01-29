@@ -33,11 +33,12 @@ App {
 
 @media only screen and (max-width:499px){
   .scrollTop {
-    padding-left: 80%;
-    margin-bottom: 8%;
+    
+    margin-bottom: 19%;
+    padding-left: 43%;
   }
 }
 
 @media only screen and (min-width:3000px){
-  
+
 }

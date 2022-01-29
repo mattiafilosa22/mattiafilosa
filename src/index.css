@@ -13,10 +13,10 @@ code {
 }
 
 @media only screen and (max-width:499px) {
-  html {
+  /* html {
     width: fit-content;
 
-  }
+  } */
 }
 
 body {

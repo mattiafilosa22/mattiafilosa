@@ -192,18 +192,39 @@
         font-size: 5.2rem;
     }
 
-    .hero header {
-        padding-left: 0;
-    }
+    
 }
 
 @media only screen and (max-width:499px) {
+    .hero h1 {
+        font-size: 3.2rem;
+    }
     .hero nav {
         font-size: 2.1rem;
     }
-    .hero{
-        height: 61rem;
+    .hero nav a{
+        font-size: 0.8rem;
     }
+    .hero img{
+        align-self: center;
+    }
+    .hero{
+        height: 42rem;
+        justify-content: center;
+    }
+    .sub_hero{
+        flex-direction: column;
+        margin-right: 0;
+        font-size: 0.7rem;
+    }
+    #buffer_btn{
+        height: 1rem;
+    }
+    .hero .button{
+        padding: 0.3em 0.6rem;
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media only screen and (min-width:3000px){
