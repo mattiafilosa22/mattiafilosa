@@ -98,6 +98,14 @@ FaLinkedin{
     width: 100px;
 }
 
+@media only screen and (max-width:499px){
+    .proj_element{
+        width: 74%;
+        
+    }
+    
+}
+
 @media only screen and (max-width:699px){
     #portfolio_cont h1.title{
         font-size: 5rem;
