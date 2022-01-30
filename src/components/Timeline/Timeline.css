@@ -74,7 +74,7 @@ div.vertical-timeline::before {
   background: #3da3d5 !important;
 }
 
-@media only screen and (max-width:999px) {
+@media only screen and (max-width:1199px) {
   #time_div .button {
     float: right;
     margin-top: 2%;

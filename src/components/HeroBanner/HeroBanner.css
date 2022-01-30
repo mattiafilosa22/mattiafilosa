@@ -209,8 +209,8 @@
         align-self: center;
     }
     .hero{
-        height: 42rem;
-        justify-content: center;
+        height: 30rem;
+        margin-bottom: 59%;
     }
     .sub_hero{
         flex-direction: column;
