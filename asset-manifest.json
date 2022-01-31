@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mattiafilosa/static/css/main.aa94a55b.css",
-    "main.js": "/mattiafilosa/static/js/main.a4283069.js",
+    "main.js": "/mattiafilosa/static/js/main.982f1723.js",
     "static/js/787.b44114a8.chunk.js": "/mattiafilosa/static/js/787.b44114a8.chunk.js",
     "static/media/brain-2750415_960_720.png": "/mattiafilosa/static/media/brain-2750415_960_720.e30a496f679ebcefc930.png",
     "static/media/bellini.png": "/mattiafilosa/static/media/bellini.b8c74307842af3bb58bc.png",
@@ -9,11 +9,11 @@
     "index.html": "/mattiafilosa/index.html",
     "static/media/work.svg": "/mattiafilosa/static/media/work.7bf042ae6650e5487b03b06fdf7fb086.svg",
     "main.aa94a55b.css.map": "/mattiafilosa/static/css/main.aa94a55b.css.map",
-    "main.a4283069.js.map": "/mattiafilosa/static/js/main.a4283069.js.map",
+    "main.982f1723.js.map": "/mattiafilosa/static/js/main.982f1723.js.map",
     "787.b44114a8.chunk.js.map": "/mattiafilosa/static/js/787.b44114a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa94a55b.css",
-    "static/js/main.a4283069.js"
+    "static/js/main.982f1723.js"
   ]
 }
