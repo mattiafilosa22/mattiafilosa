@@ -15,7 +15,7 @@ let timelineElements = [
       title: "Web Developer Internship",
       location: "Liberty Magona, Piombino(LI), Italy",
       description:
-        "Development of web application using oracle APEX - Jobs for the information systems of the company",
+        "Development of web application using oracle APEX - Support for the IT department of the company",
       buttonText: "Company website",
       date: "November 2019 - January 2020",
       url: "https://libertysteelgroup.com/it/",
@@ -37,7 +37,7 @@ let timelineElements = [
       title: "Degree in Digital Humanities",
       location: "University of Pisa",
       description:
-        "During the course of DH i improved both computer skills and the abilty to relate with people.",
+        "During the course of DH i improved both computer skills and the abilty to relate with people",
       buttonText: "",
       date: "September 2017 - November 2020",
       url: "",

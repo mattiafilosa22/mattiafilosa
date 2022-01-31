@@ -22,7 +22,7 @@ let projectsElements = [
         title: "Lettera di Bellini",
         logo: "bellini",
         description:
-            "This is a project made by me and Matteo Sarzazini during the course of Codifica dei testi at the University of Pisa. The app is in maintenance",
+            "This is a project made by me and Matteo Sarzazini during the course of Codifica dei testi at the University of Pisa",
         url: "https://mattiafilosa22.github.io/bellini-lettere/",
         framework: "XSLT - JQuery - CSS3"
     },
