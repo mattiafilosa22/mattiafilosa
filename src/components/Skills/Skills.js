@@ -1,34 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './Skills.css';
 import '../../App.css';
 
 const Skills = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        function handleScroll() {
+          if (window.scrollY > 0) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
+        }
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <div id='skills_cont'>
+        <div id='skills_cont' className={`scroll-div ${isScrolled ? "fade-from-left" : ""}`}>
             <div className='circle' id='c1'></div>
             {/* <div className='circle' id='c2'></div> */}
             <div className='container' id='skills'>
                 <h1>Skills</h1>
-                <p>HTML5 - CSS3 - JS</p>
+                <p>HTML5 - SASS</p>
                 <div className="container_small">
                     <div className="skill html">90%</div>
                 </div>
 
-                <p>NLTK (Python3)</p>
+                <p>JS (React - jQuery)</p>
                 <div className="container_small">
                     <div className="skill python">80%</div>
                 </div>
-                <p>ReactJS - Node.js</p>
+
+                <p>PHP 8.0</p>
                 <div className="container_small">
-                    <div className="skill react">60%</div>
+                    <div className="skill react">70%</div>
                 </div>
 
-                <p>PHP</p>
+                <p>Python 3</p>
                 <div className="container_small">
                     <div className="skill xslt">50%</div>
                 </div>
 
-                <p>Asp.Net CORE</p>
+                <p>C - C#</p>
                 <div className="container_small">
                     <div className="skill asp">40%</div>
                 </div>

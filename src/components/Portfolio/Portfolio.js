@@ -1,16 +1,42 @@
-import React from 'react';
+import React, { useRef, useEffect } from "react";
 import './Portfolio.css';
 import projectsElements from '../../data/projects';
 import brain from '../../media/brain-2750415_960_720.png';
 import bellini from '../../media/bellini.png';
 import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
 
-import { FaLinkedin } from 'react-icons/fa';
-
 const Portfolio = () => {
+    const scrollableDivRef = useRef(null);
+
+    const uniqueId = () => {
+        let chars = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
+        let id = '';
+        for(let i = 0; i < 10; i++) {
+            let index = Math.round(Math.random() * (chars.length - 1));
+            id += chars[index];
+        }
+        return id;
+    };
+
+    useEffect(() => {
+        const scrollHandler = () => {
+        const scrollY = scrollableDivRef.current.scrollTop;
+        if (scrollY > 0) {
+            scrollableDivRef.current.classList.add("fade-from-left");
+        } else {
+            scrollableDivRef.current.classList.remove("fade-from-left");
+        }
+        };
+        scrollableDivRef.current.addEventListener("scroll", scrollHandler);
+        return () => {
+        scrollableDivRef.current.removeEventListener("scroll", scrollHandler);
+        };
+    }, []);
+
     return (
-        <div id='portfolio_cont'>
+        <div id='portfolio_cont' ref={scrollableDivRef}>
             <h1 className='title'>Portfolio</h1>
             <div id='proj_container'>
                 {projectsElements.map(element => {
@@ -21,17 +47,18 @@ const Portfolio = () => {
                     } else if (element.logo === 'bellini') {
                         icon = bellini;
                     }
-                    return (<div className='proj_element'>
+                    return (<div className='proj_element'  key={`${uniqueId()}-${element.key}`}>
 
-                        <div key={element.key}>
+                        <div key={`${uniqueId()}-${element.key}`}>
 
                             <img src={icon} alt='logo' />
 
-                            <p><h1>{element.title}</h1>
+                            <span><h1>{element.title}</h1>
                                 <h5>{element.framework}</h5>
                                 {element.description}<br /><br />
-                                <a href={element.url} className='button' target="_blank">View the project</a></p>
-
+                                
+                                {element.url && ( <a href={element.url} className='button' target="_blank">View the project</a>)}
+                            </span>
                         </div>
 
                     </div>
@@ -40,9 +67,9 @@ const Portfolio = () => {
             </div>
             <div id='contact'>
                 <SocialIcon url="https://www.linkedin.com/in/mattia-filosa/" />
-                <div class='icon_buffer' />
+                <div className='icon_buffer' />
                 <SocialIcon url="https://github.com/mattiafilosa22" />
-                <div class='icon_buffer' />
+                <div className='icon_buffer' />
                 <SocialIcon url="mailto:mattiafilosadev@gmail.com" />
             </div>
             <div className="custom-shape-divider-bottom-1643030209">
