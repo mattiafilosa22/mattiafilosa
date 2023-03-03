@@ -4,7 +4,7 @@ let timelineElements = [
       title: "Web Developer",
       location: "Hibo SRL, Bologna, Italy",
       description:
-        "Development of website as front-end developer using ReactJS and Laravel Blade",
+        "Development of website. Mainly used frameworks: Symfony - Laravel - React.JS",
       buttonText: "Company website",
       date: "January 2021 - present",
       url: "https://www.hibo.it/it",
