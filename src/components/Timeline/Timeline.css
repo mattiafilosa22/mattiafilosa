@@ -82,6 +82,9 @@ div.vertical-timeline::before {
 }
 
 @media only screen and (max-width:499px) {
+  .vertical-timeline-element-icon {
+    display: none;
+  }
   #time_div h1 {
     font-size: 6rem;
   }
@@ -91,19 +94,15 @@ div.vertical-timeline::before {
   }
 
   .vertical-timeline-element-content {
-    width: 75%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem!important;
   }
-
-  /* span.date {
-    width: 30%;
-  } */
 
   .vertical-timeline-element-title, .vertical-timeline-element-subtitle, #description {
     text-align: center;
-  }
-
-  .vertical-timeline-element {
-    margin-left: 10px !important;
   }
 
   .vertical-timeline-element-date {
@@ -117,6 +116,10 @@ div.vertical-timeline::before {
   }
   .vertical-timeline.vertical-timeline--two-columns:before{
     margin-left: 10px!important;
+  }
+
+  .workButton {
+    float: unset;
   }
 
 }
