@@ -4,7 +4,7 @@ let timelineElements = [
       title: "Web Developer",
       location: "Hibo SRL, Bologna, Italy",
       description:
-        "Development of website. Mainly used frameworks: Symfony - Laravel - React.JS",
+        "Development of website as full stack developer<br /><strong>Frameworks</strong>: Symfony - Laravel - React.JS <br /> <strong>CMS</strong>: Wordpress - Drupal",
       buttonText: "Company website",
       date: "January 2021 - present",
       url: "https://www.hibo.it/it",
@@ -15,7 +15,7 @@ let timelineElements = [
       title: "Web Developer Internship",
       location: "Liberty Magona, Piombino(LI), Italy",
       description:
-        "Development of web application using oracle APEX - Support for the IT department of the company",
+        "Development of web application using <strong>Oracle APEX</strong> - Support for the <strong>IT department</strong> of the company",
       buttonText: "Company website",
       date: "November 2019 - January 2020",
       url: "https://libertysteelgroup.com/it/",
@@ -37,7 +37,7 @@ let timelineElements = [
       title: "Degree in Digital Humanities",
       location: "University of Pisa",
       description:
-        "During the course of DH i improved both computer skills and the abilty to relate with people",
+        "During the course of <strong>DH</strong> i improved both <strong>computer skills</strong> and the abilty to <strong>relate</strong> with people",
       buttonText: "",
       date: "September 2017 - November 2020",
       url: "",
@@ -48,7 +48,7 @@ let timelineElements = [
       title: "Maturità scientifica",
       location: "ISIS Carducci - Volta - Pacinotti",
       description:
-        "During my schooling i have acquired a mindset based on the importance of the work and the study",
+        "During my schooling i have acquired a <strong>mindset</strong> based on the importance of the <strong>work</strong> and the <strong>study</strong>",
       buttonText: "",
       date: "2012 - 2017",
       url: "",

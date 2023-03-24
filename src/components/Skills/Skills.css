@@ -72,15 +72,15 @@
 }
 
 .react {
-    width: 60%;
+    width: 70%;
 }
 
 .xslt {
-    width: 50%;
+    width: 70%;
 }
 
 .asp {
-    width: 40%;
+    width: 60%;
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
@@ -193,5 +193,66 @@
         position: absolute;
         right: 10rem;
         top: 206rem;
+    }
+}
+
+/** animation progress bar **/
+.active-animation #html {
+    animation: nine 2.5s linear forwards;
+}
+
+.active-animation #js {
+    animation: height 2.5s linear forwards;
+}
+
+.active-animation #php {
+    animation: seven 2.5s linear forwards;
+}
+
+.active-animation #python {
+    animation: seven 2.5s linear forwards;
+}
+
+.active-animation #csharp {
+    animation: six 2.5s linear forwards;
+}
+
+@keyframes nine {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes height {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes seven {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes six {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
     }
 }
