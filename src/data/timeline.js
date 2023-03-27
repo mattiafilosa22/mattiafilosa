@@ -7,7 +7,7 @@ let timelineElements = [
         "Development of website as full stack developer<br /><strong>Frameworks</strong>: Symfony - Laravel - React.JS <br /> <strong>CMS</strong>: Wordpress - Drupal",
       buttonText: "Company website",
       date: "January 2021 - present",
-      url: "https://www.hibo.it/it",
+      url: "https://www.hibo.it",
       icon: "work",
     },
     {
