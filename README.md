@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `docker build -t mattiafilosa .`
+### `docker run -p 3000:3000 mattiafilosa`
+This application has Dockerfile
+
 ### `npm start`
 
 Runs the app in the development mode.\
