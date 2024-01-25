@@ -1,6 +1,6 @@
 #port_container{
     display: flex;
-    align-items: center; 
+    align-items: center;
     place-content: center;
 }
 #portfolio{
@@ -38,7 +38,7 @@
 
 .proj_element h5{
     margin-top: 0;
-    
+
 }
 
 .button {
@@ -55,7 +55,7 @@
 
 /*Footer*/
 .custom-shape-divider-bottom-1643030209 {
-    
+
     bottom: 0;
     left: 0;
     width: 100%;
@@ -94,8 +94,24 @@
     margin:1%;
 }
 
-FaLinkedin{
-    width: 100px;
+.portfolio-cont {
+    position: relative;
+    left: 0;
+}
+
+.portfolio-animation {
+    animation: portfolioAnimation 1s ease-in-out;
+}
+
+@keyframes portfolioAnimation {
+    from {
+        left: -50%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width:499px){
@@ -103,7 +119,7 @@ FaLinkedin{
         width: 90%!important;
         text-align: center;
     }
-    
+
 }
 
 @media only screen and (max-width:699px){
@@ -137,7 +153,7 @@ FaLinkedin{
 @media only screen and (min-width:3000px){
     #portfolio_cont{
         margin-top: 16%;
-        
+
     }
     #portfolio_cont h1.title{
         font-size: 18rem;
@@ -145,7 +161,7 @@ FaLinkedin{
     #proj_container{
         margin-bottom: 10%;
     }
-    
+
     .proj_element{
         font-size: 1.9rem;
     }

@@ -1,14 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import './Portfolio.css';
 import projectsElements from '../../data/projects';
 import brain from '../../media/brain-2750415_960_720.png';
 import bellini from '../../media/bellini.png';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
 
 const Portfolio = () => {
-    const scrollableDivRef = useRef(null);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const portfolioRef = useRef();
 
     const uniqueId = () => {
         let chars = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
@@ -21,27 +20,25 @@ const Portfolio = () => {
     };
 
     useEffect(() => {
-        const scrollHandler = () => {
-        const scrollY = scrollableDivRef.current.scrollTop;
-        if (scrollY > 0) {
-            scrollableDivRef.current.classList.add("fade-from-left");
-        } else {
-            scrollableDivRef.current.classList.remove("fade-from-left");
+        function handleScroll() {
+            const rect = portfolioRef.current.getBoundingClientRect();
+            const isNearViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+            setIsScrolled(isNearViewport);
         }
-        };
-        scrollableDivRef.current.addEventListener("scroll", scrollHandler);
+
+        window.addEventListener("scroll", handleScroll);
+
         return () => {
-        scrollableDivRef.current.removeEventListener("scroll", scrollHandler);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
     return (
-        <div id='portfolio_cont' ref={scrollableDivRef}>
+        <div ref={portfolioRef} id='portfolio_cont' className={`portfolio-cont ${isScrolled && "portfolio-animation"}`}>
             <h1 className='title'>Portfolio</h1>
             <div id='proj_container'>
                 {projectsElements.map(element => {
                     let icon = 'https://robohash.org/2?size=200x200';
-                    let id = element.id;
                     if (element.logo === 'brain') {
                         icon = brain;
                     } else if (element.logo === 'bellini') {
@@ -56,8 +53,8 @@ const Portfolio = () => {
                             <span><h1>{element.title}</h1>
                                 <h5>{element.framework}</h5>
                                 {element.description}<br /><br />
-                                
-                                {element.url && ( <a href={element.url} className='button' target="_blank">View the project</a>)}
+
+                                {element.url && ( <a href={element.url} className='button' target="_blank" rel="noreferrer">View the project</a>)}
                             </span>
                         </div>
 

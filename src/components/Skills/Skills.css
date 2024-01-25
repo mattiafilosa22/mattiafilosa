@@ -32,7 +32,7 @@
     border-radius: 15px;
 }
 
-/*Skills*/  
+/*Skills*/
 #skills {
     /* background: url('../../media/skills.jpg') no-repeat center center fixed; */
     -webkit-background-size: cover;
@@ -187,7 +187,7 @@
         border-left: 200px solid transparent;
         border-right: 200px solid transparent;
         border-bottom: 400px solid #3da3d5;
-        
+
     }
     #t1{
         position: absolute;
@@ -197,6 +197,11 @@
 }
 
 /** animation progress bar **/
+.active-animation {
+    position: relative;
+    animation: fromLeft 1s linear;
+}
+
 .active-animation #html {
     animation: nine 2.5s linear forwards;
 }
@@ -215,6 +220,17 @@
 
 .active-animation #csharp {
     animation: six 2.5s linear forwards;
+}
+
+@keyframes fromLeft {
+    from {
+        left: 50%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 @keyframes nine {
