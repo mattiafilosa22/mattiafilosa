@@ -86,7 +86,6 @@
 }
 
 .hero {
-    /* background: url('../../media/header.jpg') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -96,28 +95,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    opacity: 1;
+    animation: alignAnimation 1s ease-in-out;
 
 }
 
 .sub_hero {
     display: flex;
     flex-direction: row;
-    /* transition: transform 1s ease-in; */
-    align-self: center;
     margin-right: 15%;
+    align-self: center;
+}
+
+@keyframes alignAnimation {
+    from {
+        left: -27%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 #int {
     display: flex;
-    /* animation: prova 5s ease-in forwards;
-    animation-timing-function: linear; */
     justify-content: center;
-}
-
-@keyframes prova {
-    100% {
-        justify-content: center;
-    }
 }
 
 .text-uppercase {
@@ -158,23 +162,37 @@
     }
 }
 
-.custom-shape-divider-top-1643020762 {
-    
+.custom-shape-divider-top {
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
+
 }
 
-.custom-shape-divider-top-1643020762 svg {
+.custom-shape-divider-top svg {
     position: relative;
     display: block;
     width: calc(135% + 803.6px);
     height: 150px;
+    animation: animateSvgTop 1s ease-in-out;
+    left: 0;
 }
 
-.custom-shape-divider-top-1643020762 .shape-fill {
+@keyframes animateSvgTop {
+    from {
+        left: -77%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.custom-shape-divider-top .shape-fill {
     fill: #3da3d5;
 }
 
@@ -192,7 +210,7 @@
         font-size: 5.2rem;
     }
 
-    
+
 }
 
 @media only screen and (max-width:499px) {
@@ -224,7 +242,7 @@
         padding: 0.3em 0.6rem;
         font-size: 1.5rem;
     }
-    
+
 }
 
 @media only screen and (min-width:3000px){
