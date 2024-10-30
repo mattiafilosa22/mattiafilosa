@@ -2,12 +2,12 @@ let timelineElements = [
     {
       id: 1,
       title: "Web Developer",
-      location: "Hibo SRL, Bologna, Italy",
+      location: "Dinova, Bologna, Italy",
       description:
-        "Development of website as full stack developer<br /><strong>Frameworks</strong>: Symfony - Laravel - React.JS <br /> <strong>CMS</strong>: Wordpress - Drupal",
+        "Development of website as full stack developer<br /><strong>Frameworks</strong>: Symfony - React.JS <br /> <strong>CMS</strong>: Wordpress - Pimcore",
       buttonText: "Company website",
       date: "January 2021 - present",
-      url: "https://www.hibo.it",
+      url: "https://www.dinova.one/contatti/",
       icon: "work",
     },
     {
@@ -55,5 +55,5 @@ let timelineElements = [
       icon: "school",
     }
   ];
-  
+
 export default timelineElements
